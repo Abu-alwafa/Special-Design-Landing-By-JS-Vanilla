@@ -1,10 +1,19 @@
+
 // resize website pages corresponding devise height
-const resizeHeight = () => {
+const resizeHeight = function() {
     document.querySelector('.landing-page').style.height = window.innerHeight + 'px';
     document.querySelector('.services-page').style.height = window.innerHeight + 'px';
     document.querySelector('.contact-page').style.height = window.innerHeight + 'px';
+    document.body.zoom = 1.0;
+    this.blur();
 }
+// const resizeWidth = () => {
+//     document.querySelector('.landing-page').style.width = window.innerWidth + 'px';
+//     document.querySelector('.services-page').style.width = window.innerWidth + 'px';
+//     document.querySelector('.contact-page').style.width = window.innerWidth + 'px';
+// }
 resizeHeight();
+// resizeWidth();
 window.onresize = resizeHeight;
 // jquery smooth scroll 
 $('.links li a').on('click', function (e) {
@@ -77,7 +86,8 @@ const main = () => {
         console.log("normal");
     }
     // add click to menu icon for open and close nav bar
-    clickEvent($('.menu-icon'), () => {
+    clickEvent($('.menu-icon'), (e) => {
+        e.stopPropagation();
         $('.links').classList.toggle('show');
         $('.menu-icon').classList.toggle('toggle');
         $$('.links li').forEach((link, index) => {
@@ -87,18 +97,21 @@ const main = () => {
 
     })
     // add click to toggle cog for opening setting box
-    clickEvent($('.toggle-settings'), () => {
+    clickEvent($('.toggle-settings'), (e) => {
+        e.stopPropagation();
         $('.settings-box').classList.toggle('open');
         $(".toggle-settings > .fa-cog").classList.toggle('fa-spin');
-        $$('.settings-container > div').forEach((div, index) => {
+        $$('.settings-container > div').forEach((div) => {
             if (div.style.animation) div.style.animation = '';
             else div.style.animation = `slideInFromLeft 1s ease`
         })
     })
     // Add click to landing page for closing setting box
-    clickEvent($('.overlay'), () => {
+    clickEvent($('.container'), (e) => {
         removeClass($('.settings-box'), 'open')
         removeClass($('.toggle-settings > .fa-cog'), 'fa-spin');
+        removeClass($('.links'), 'show');
+        removeClass($('.menu-icon'), 'toggle');
     })
     // Add click to each color circle for changing root color and setting value in local storage
     $$('.color-list li').forEach(item => clickEvent(item, (e) => {

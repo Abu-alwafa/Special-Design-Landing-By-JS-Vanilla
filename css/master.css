@@ -20,11 +20,20 @@ body,html{
     color:white;
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 .container{
     height: 100%;
     width: 100%;
+    overflow: hidden;
+}
+.landing-page,
+.services-page,
+.contact-page{
+    height: 100vh;
+    width: 100vw;
+    
 }
 /* Start landing page */
 .landing-page{
@@ -45,7 +54,7 @@ body,html{
     z-index: -1;
 }
 .landing-page .header-area{
-    width: 100%;
+    width: 100vw;
     position: fixed;
     left: 0;
     height: 0;
@@ -59,6 +68,7 @@ body,html{
     transition: 0.5s ease-in-out;
 }
 .header-area .logo {
+    flex: 1;
     font-style: italic;
     font-weight: bold;
     font-size: 1.5rem;
@@ -66,7 +76,8 @@ body,html{
 
 }
 .links-container{
-    width: 60%;
+    /* width: 60%; */
+    flex: 2;
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-start;
@@ -74,7 +85,7 @@ body,html{
     font-size: 1rem;
 }
 .header-area .links{
-    width: 80%;
+    /* width: 80%; */
     list-style: none;
     display: flex;
     justify-content: flex-end;
@@ -139,7 +150,7 @@ body,html{
     left: -10rem;
     top: 4rem;
     width: 10rem;
-    z-index: 2;
+    z-index: 3;
     height: 50%;
     transition: .3s ease-in;
     padding: .5rem;
@@ -626,13 +637,13 @@ footer{
 
 /* ................... */
 @media (max-width: 1200px){
-    .landing-page,.services-page,.products-page,.contact-page{
+    .container{
         width: 1140px;
     }
     
 }
 @media (max-width: 992px){
-    .landing-page,.services-page,.products-page,.contact-page{
+    .container{
         width: 960px;
     }
     .header-area .links-container{
@@ -649,7 +660,7 @@ footer{
     }
 }
 @media (max-width: 768px){
-    .landing-page,.services-page,.products-page,.contact-page{
+    .container{
         width: 720px;
     }
     .header-area .logo{
@@ -671,11 +682,12 @@ footer{
         background-color: rgba(0, 0, 0, 0.3);
         width: 7rem;
         height: 50vh;
-        transform: translateX(100%);
+        transform: translateX(7rem);
         transition: 0.3s ease-in;
         font-size: 0.8rem;
         border-radius: 1rem 0 0 1rem;
         border: 1px solid white;
+        /* display: none; */
     }
     .settings-box .introduction-text{
         width: 20rem;
@@ -719,8 +731,8 @@ footer{
     }
 }
 @media (max-width: 578px){
-    .landing-page,.services-page,.products-page,.contact-page{
-        width: 540px;
+    .landing-page{
+        /* width: 540px; */
     }
     .header-area .logo{
         font-size: 0.9rem;
@@ -742,5 +754,4 @@ footer{
         font-size: 50%;
     }
 }
-
 
