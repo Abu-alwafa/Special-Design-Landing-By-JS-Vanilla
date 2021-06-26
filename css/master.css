@@ -306,6 +306,7 @@ body,html{
     margin: 3rem auto;
 }
 .products-page .translate{
+    width: 75%;
     background-color: rgba(255, 255, 255, 0.2);
     display: flex;
     justify-content: center;
@@ -313,21 +314,25 @@ body,html{
     border-radius: 1rem;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.18);
 }
+.previous,.next{
+    width: 10%;
+}
+.numbers{
+    width: 80%;
+}
 .numbers ul{
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 .numbers ul li{
     list-style: none;
     display: block;
-    width: 50px;
-    height: 50px;
-    font-weight: 600;
-    padding: .5rem 0;
+    padding: 5px 2px;
+    margin: 0 5px;
     text-align: center;
 }
 .numbers ul li:not(.dots){
@@ -341,7 +346,7 @@ body,html{
 .translate button{
     background-color: transparent;
     border: none;
-    padding: .5rem 2rem;
+    padding: 5px 2px;
     text-align: center;
     cursor: pointer;
     font-weight: 800;
@@ -576,15 +581,11 @@ footer{
     justify-content: center;
     align-items: center;
 }
-.info{
-    display: flex;
-    
-}
 .info a{
     color: white;
     display: inline-block;
     text-decoration: none;
-    margin: 0 2rem;
+    margin-left: 2rem;
 }
 
 /* End contact page */
@@ -660,7 +661,7 @@ footer{
 }
 @media (max-width: 768px){
     /* .container{
-        width: 720px;
+        width: 100%;
     } */
     .header-area .logo{
         font-size: 1.2rem;
@@ -681,7 +682,7 @@ footer{
         background-color: rgba(0, 0, 0, 0.3);
         width: 7rem;
         height: 50vh;
-        transform: translateX(7rem);
+        transform: translateX(10rem);
         transition: 0.3s ease-in;
         font-size: 0.8rem;
         border-radius: 1rem 0 0 1rem;
@@ -710,12 +711,12 @@ footer{
         justify-content: space-evenly;
     }
     .contact-form{
-        height: 75%;
+        height: 85%;
         width: 100%;
     }
     .contact-info{
         width: 100%;
-        height: 15%;
+        height: 5%;
         flex-direction: row;
         align-items: center;
     }
@@ -736,21 +737,35 @@ footer{
     .header-area .logo{
         font-size: 0.9rem;
     }
+    .settings-box .introduction-text{
+        width: 17rem;
+        font-size: 0.4rem;
+        text-align: justify;
+    }
     .settings-box .introduction-text p{
         font-size: 0.8rem;
+    }
+    .services-page,.contact-page .container,.products-page{
+        padding:5px;
+        margin: 0;
     }
     .service{
         width: 75%;
     }
-    .contact-info .box{
-        font-size: 0.8rem;
+    .products-page .translate{
+        width: 100%;
     }
-    .box i{
+    .contact-info .box{
+        font-size: 0.5rem;
+        text-align: center;
+    }
+    .box .icon i{
         font-size: 1rem;
-        margin-right: 0.5rem;
+        margin: 0;
     }
     footer{
         font-size: 50%;
+        text-align: center;
     }
 }
 

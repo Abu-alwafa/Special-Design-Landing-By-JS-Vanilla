@@ -7,14 +7,10 @@ const resizeHeight = function() {
     document.body.zoom = 1.0;
     this.blur();
 }
-// const resizeWidth = () => {
-//     document.querySelector('.landing-page').style.width = window.innerWidth + 'px';
-//     document.querySelector('.services-page').style.width = window.innerWidth + 'px';
-//     document.querySelector('.contact-page').style.width = window.innerWidth + 'px';
-// }
+
 resizeHeight();
-// resizeWidth();
-window.onresize = resizeHeight;
+// window.onresize = resizeHeight;
+
 // jquery smooth scroll 
 $('.links li a').on('click', function (e) {
     if (this.hash !== '') {
