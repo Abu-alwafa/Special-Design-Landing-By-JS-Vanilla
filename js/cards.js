@@ -1,52 +1,52 @@
 
 const dObj = [
     {
-        imgSrc: 'imgs/1.jpg',
+        imgSrc: 'products-imgs/1.png',
         title: 'Dress',
         describe: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, sed?'
     },
     {
-        imgSrc: 'imgs/2.jpg',
+        imgSrc: 'products-imgs/2.png',
         title: 'Dress',
         describe: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, sed?'
     },
     {
-        imgSrc: 'imgs/3.jpg',
+        imgSrc: 'products-imgs/3.png',
         title: 'Dress',
         describe: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, sed?'
     },
     {
-        imgSrc: 'imgs/4.jpg',
+        imgSrc: 'products-imgs/4.png',
         title: 'Dress',
         describe: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, sed?'
     },
     {
-        imgSrc: 'imgs/5.jpg',
+        imgSrc: 'products-imgs/5.png',
         title: 'Dress',
         describe: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, sed?'
     },
     {
-        imgSrc: 'imgs/6.jpg',
+        imgSrc: 'products-imgs/6.png',
         title: 'Dress',
         describe: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, sed?'
     },
     {
-        imgSrc: 'imgs/4.jpg',
+        imgSrc: 'products-imgs/7.png',
         title: 'Dress',
         describe: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, sed?'
     },
     {
-        imgSrc: 'imgs/5.jpg',
+        imgSrc: 'products-imgs/8.png',
         title: 'Dress',
         describe: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, sed?'
     },
     {
-        imgSrc: 'imgs/6.jpg',
+        imgSrc: 'products-imgs/9.png',
         title: 'Dress',
         describe: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, sed?'
     },
     {
-        imgSrc: 'imgs/2.jpg',
+        imgSrc: 'products-imgs/10.png',
         title: 'Dress',
         describe: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, sed?'
     }

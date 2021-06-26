@@ -363,11 +363,13 @@ body,html{
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
 }
 .img-container{
+    height: 70%;
     position: relative;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
 }
-.img-container img{
+.img-container > img{
+    height: 15rem;
     width: 100%;
     display: block;
     border-radius: 20px 20px 0 0;
@@ -440,7 +442,7 @@ body,html{
 }
 .service{
     width: 30%;
-    height: 50%;
+    height: 30%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -698,13 +700,12 @@ footer{
         height: 100%;
     }
     .service{
-        max-width: 80%;
-        height: 30%;
+        width: 80%;
         margin: 0.7rem auto;
     }
-    .service img{
-        max-width: 50%;
-        height: 50%;
+    .service img:not(:nth-child(1)){
+        width: 50%;
+        /* height: 50%; */
     }
     .contact-page .container{
         flex-direction: column-reverse;
