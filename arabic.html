@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Special Design</title>
+    <style>
+        @font-face {
+            font-family: dubai;
+            src: url(../dubai/Dubai-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: dubai-bold;
+            src: url(../dubai/Dubai-Bold.ttf);
+        }
+
+        body {
+            font-family: dubai;
+        }
+
+        .header-area .logo {
+            margin-right: 1rem;
+        }
+
+        h1 {
+            font-size: 1.2rem;
+        }
+
+        .box label {
+            margin: 0 1rem;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- start landing page -->
+    <div class="landing-page" id="about">
+        <div class="overlay"></div>
+        <div class="header-area">
+            <div class="logo">تصميم خاص</div>
+            <div class="links-container">
+                <div class="menu-icon">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul class="links">
+                    <li><a href="#about" class="active" data-name="about">من نحن</a></li>
+                    <li><a href="#services" data-name="services">خدماتنا</a></li>
+                    <li><a href="#products" data-name="products">منتجاتنا</a></li>
+                    <li><a href="#contact" data-name="contact">تواصل</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- start setting box -->
+        <div class="settings-box">
+            <div class="toggle-settings">
+                <i class="fas fa-cog"></i>
+            </div>
+            <div class="settings-container">
+                <div class="colors-options">
+                    <h4>ألوان الموقع</h4>
+                    <ul class="color-list">
+                        <li class="active" data-color="#860d0d"></li>
+                        <li data-color="#ec407a"></li>
+                        <li data-color="#7e57c2"></li>
+                        <li data-color="#26a69a"></li>
+                        <li data-color="#f1a918"></li>
+                    </ul>
+                </div>
+                <div class="background-options">
+                    <h4>خلفية عشوائية</h4>
+                    <ul class="yes-no">
+                        <li class="" data-random="yes">نعم</li>
+                        <li class="active" data-random="no">لا</li>
+                    </ul>
+                </div>
+                <div class="background-switchingTime">
+                    <h4>زمن تغيير الخلفية</h4>
+                    <ul class="time-groub groub">
+                        <li class="" data-time="3000">3ث</li>
+                        <li class="active" data-time="5000">5ث</li>
+                        <li class="" data-time="10000">10ث</li>
+                        <li class="" data-time="15000">15ث</li>
+                    </ul>
+                </div>
+                <div class="site-language">
+                    <h4>لغة الموقع</h4>
+                    <ul class="lang groub">
+                        <li class="" data-lang="english"><a href="index.html">En</a></li>
+                        <li class="active" data-lang="arabic"><a href="arabic.html">Ar</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="introduction-text">
+                <fieldset>
+                    <legend>
+                        <h1>شركة<span>(اسم الشركة)</span>لتجارة الألبسة النسائية</h1>
+                    </legend>
+                    <p>نحن شركة مختصة في تجارة الألبسة النسائية والاكسسوار العصري ضمن المعايير العالمية وصيحات
+                        الموضة...الخ</p>
+                </fieldset>
+            </div>
+        </div>
+        <!-- End setting box  -->
+    </div>
+    <!-- End landing page -->
+
+
+
+    <!-- Start services page -->
+    <div id="services" class="services-page">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="services">
+
+                <div id="replacmet" class="service">
+                    <img src="imgs/replace-product.png" alt="Replacement">
+                    <p class="service-description">المراجعة في حال حدوث خطأ في القياسات او الموديل واسترداد النقود
+                        او الإستبدال</p>
+                </div>
+                <div class="service">
+                    <img src="imgs/free-delivery2.png" alt="Free Delivary">
+                    <p class="service-description">التوصيل مجاني للمنزل بأسرع وقت</p>
+                </div>
+                <div class="service">
+                    <img src="imgs/response-messages2.png" alt="Response">
+                    <p class="service-description">الرد السريع على الطلبات والرسائل والاستفسارات</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Start services page -->
+
+    <!-- Start products page -->
+    <div id="products" class="products-page">
+        <div class="container">
+            <div class="cards">
+
+            </div>
+        </div>
+        <div class="translate">
+            <div class="previous">
+                <button><i class="fas fa-chevron-left"></i></button>
+            </div>
+            <div class="numbers">
+                <ul>
+                    <li class="active">1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li class="dots">. . .</li>
+                    <li>247</li>
+                </ul>
+            </div>
+            <div class="next">
+                <button><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+    <!-- Start products page -->
+
+    <!-- Start contact page -->
+    <div id="contact" class="contact-page">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="contact-info">
+                <div class="box">
+                    <!--href will contain tel:phoneNumber -->
+                    <a href="" class="icon" id="phon">
+                        <i style="color: #773c07;" class="fas fa-mobile-alt"></i>
+                    </a>
+                    <label for="phon">هاتف</label>
+                </div>
+                <div class="box">
+                    <!-- href will contain like this mailto:email@gmail.com -->
+                    <a href="" id="email" class="icon">
+                        <i style="color: #670c33;" class="far fa-envelope"></i>
+                    </a>
+                    <label for="email">ايميل</label>
+
+
+                </div>
+                <div class="box">
+                    <!-- href will contan url like this https://wa.me/phoneNumber -->
+                    <a href="" id="whatsapp" class="icon">
+                        <i style="color: #485e0f;" class="fab fa-whatsapp"></i>
+                    </a>
+                    <label for="whatsapp">واتساب</label>
+
+
+                </div>
+                <div class="box">
+                    <!-- href will contain facebook page url -->
+                    <a href="" id="facebook" class="icon">
+                        <i style="color: #19506a;" class="fab fa-facebook-square"></i>
+                    </a>
+                    <label for="facebook">فيس بوك</label>
+
+
+                </div>
+            </div>
+            <div class="contact-form">
+                <form action="action_page.php">
+
+                    <label for="fname">الاسم</label>
+                    <input type="text" id="fname" name="firstname" placeholder="اسمك">
+
+                    <label for="lname">الكنية</label>
+                    <input type="text" id="lname" name="lastname" placeholder="الكنية">
+
+                    <label for="country">البلد</label>
+                    <input type="text" id="country" name="country" placeholder="بلدك">
+
+                    <label for="message">محتوى الرسالة</label>
+                    <textarea id="message" name="message" placeholder="اكتب شيئا"></textarea>
+
+                    <input type="submit" value="ارسال">
+
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div class="copyright" style="background-color: rgba(0, 0, 0, 0.05);">
+                © 2021 Copyright : Abu Alwafa
+            </div>
+            <div class="info">
+                <a class="mobile" href=""><i class="fas fa-mobile-alt"></i> 00905317703913</a>
+                <a class="email" href=""><i class="far fa-envelope"></i> abu.alwafa892@gmail.com</a>
+            </div>
+        </footer>
+    </div>
+    <!-- End contact page -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/master.js"></script>
+    <script src="js/cards.js"></script>
+
+</body>
+
+
+</html>

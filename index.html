@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Special Design</title>
+</head>
+<!-- start landing page -->
+<div class="landing-page" id="about">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="header-area">
+            <div class="logo">Special Design</div>
+            <div class="links-container">
+                <div class="menu-icon">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul class="links">
+                    <li><a href="#about" class="active" data-name="about">About</a></li>
+                    <li><a href="#services" data-name="services">Services</a></li>
+                    <li><a href="#products" data-name="products">Products</a></li>
+                    <li><a href="#contact" data-name="contact">Contact</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <!-- start setting box -->
+        <div class="settings-box">
+            <div class="toggle-settings">
+                <i class="fas fa-cog"></i>
+            </div>
+            <div class="settings-container">
+                <div class="colors-options">
+                    <h4>Colors :</h4>
+                    <ul class="color-list">
+                        <li class="active" data-color="#860d0d"></li>
+                        <li data-color="#ec407a"></li>
+                        <li data-color="#7e57c2"></li>
+                        <li data-color="#26a69a"></li>
+                        <li data-color="#f1a918"></li>
+                    </ul>
+                </div>
+                <div class="background-options">
+                    <h4>Random Backgrounds :</h4>
+                    <ul class="yes-no">
+                        <li class="" data-random="yes">Yes</li>
+                        <li class="active" data-random="no">No</li>
+                    </ul>
+                </div>
+                <div class="background-switchingTime">
+                    <h4>BG Switching Time :</h4>
+                    <ul class="time-groub groub">
+                        <li class="" data-time="3000">3s</li>
+                        <li class="active" data-time="5000">5s</li>
+                        <li class="" data-time="10000">10s</li>
+                        <li class="" data-time="15000">15s</li>
+                    </ul>
+                </div>
+                <div class="site-language">
+                    <h4>Site Language :</h4>
+                    <ul class="lang groub">
+                        <li class="active" data-lang="english"><a href="index.html">En</a></li>
+                        <li class="" data-lang="arabic"><a href="arabic.html">Ar</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="introduction-text">
+                <fieldset>
+                    <legend>
+                        <h1>Who <span>We</span> Are?</h1>
+                    </legend>
+                    <p>We Are a (...) Company To Trade Women's Clothing And Accessories For The Latest International
+                        Fashions That Suit All Ages At Competitive Prices And High Discount Rates..</p>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+    <!-- End setting box  -->
+</div>
+<!-- End landing page -->
+
+<!-- Start services page -->
+<div id="services" class="services-page">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="services">
+            <div id="replacmet" class="service">
+                <img src="imgs/replace-product.png" alt="Replacement">
+                <p class="service-description">Replace the product if there is an error in size or model</p>
+            </div>
+            <div class="service">
+                <img src="imgs/free-delivery2.png" alt="Free Delivary" style=" height: 5rem;">
+                <p class="service-description">Free home delivery</p>
+            </div>
+            <div class="service">
+                <img src="imgs/response-messages2.png" alt="Response">
+                <p class="service-description">Immediate response to messages and requests</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Start services page -->
+
+<!-- Start products page -->
+<div id="products" class="products-page">
+    <div class="container">
+        <div class="cards">
+
+        </div>
+    </div>
+    <div class="translate">
+        <div class="previous">
+            <button><i class="fas fa-chevron-left"></i></button>
+        </div>
+        <div class="numbers">
+            <ul>
+                <li class="active">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li class="dots">. . .</li>
+                <li>247</li>
+            </ul>
+        </div>
+        <div class="next">
+            <button><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+</div>
+<!-- Start products page -->
+
+<!-- Start contact page -->
+<div id="contact" class="contact-page">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="contact-info">
+            <div class="box">
+                <!--href will contain tel:phoneNumber -->
+                <a href="" class="icon" id="phon">
+                    <i style="color: #773c07;" class="fas fa-mobile-alt"></i>
+                </a>
+                <label for="phon">Phone</label>
+            </div>
+            <div class="box">
+                <!-- href will contain like this mailto:email@gmail.com -->
+                <a href="" id="email" class="icon">
+                    <i style="color: #670c33;" class="far fa-envelope"></i>
+                </a>
+                <label for="email">Email</label>
+            </div>
+            <div class="box">
+                <!-- href will contan url like this https://wa.me/phoneNumber -->
+                <a href="" id="whatsapp" class="icon">
+                    <i style="color: #485e0f;" class="fab fa-whatsapp"></i>
+                </a>
+                <label for="whatsapp">WhatsApp</label>
+            </div>
+            <div class="box">
+                <!-- href will contain facebook page url -->
+                <a href="" id="facebook" class="icon">
+                    <i style="color: #19506a;" class="fab fa-facebook-square"></i>
+                </a>
+                <label for="facebook">Facebook</label>
+            </div>
+        </div>
+        <div class="contact-form">
+            <form action="action_page.php">
+
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="country">Country</label>
+                <input type="text" id="country" name="country" placeholder="Your Country">
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Write something.."></textarea>
+
+                <input type="submit" value="Send">
+
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="copyright" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2021 Copyright : Abu Alwafa
+        </div>
+        <div class="info">
+            <a class="mobile" href=""><i class="fas fa-mobile-alt"></i> 00905317703913</a>
+            <a class="email" href=""><i class="far fa-envelope"></i> abu.alwafa892@gmail.com</a>
+        </div>
+    </footer>
+
+</div>
+<!-- End contact page -->
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/master.js"></script>
+<script src="js/cards.js"></script>
+
+</html>
