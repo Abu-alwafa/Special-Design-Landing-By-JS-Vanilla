@@ -163,14 +163,14 @@ const main = () => {
         }
 
         // check scroll amount for changing active link(page)
-        if (scrollAmount < ($('.services-page').offsetTop)) {
+        if (scrollAmount < ($('.products-page').offsetTop)) {
             changeActiveLink($$('.links li a'), 'about');
         }
-        else if (scrollAmount >= $('.services-page').offsetTop && scrollAmount < $('.products-page').offsetTop) {
-            changeActiveLink($$('.links li a'), 'services');
-        }
-        else if (scrollAmount >= $('.products-page').offsetTop && scrollAmount < $('.contact-page').offsetTop) {
+        else if (scrollAmount >= $('.products-page').offsetTop && scrollAmount < $('.services-page').offsetTop) {
             changeActiveLink($$('.links li a'), 'products');
+        }
+        else if (scrollAmount >= $('.services-page').offsetTop && scrollAmount < $('.contact-page').offsetTop) {
+            changeActiveLink($$('.links li a'), 'services');
         }
         else changeActiveLink($$('.links li a'), 'contact');
     }

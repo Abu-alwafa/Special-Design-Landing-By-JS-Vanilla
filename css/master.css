@@ -294,10 +294,12 @@ transform: scale(1.1);
 
 /* Start products page */
 .products-page{
+    height: 100vh;
     padding: 1rem;
     border-top: 2px solid rgb(21, 19, 32);
     background-color: rgba(21, 19, 32, 0.8);
-    /* background-color: rgba(0, 0, 0,0.8); */
+    position: relative;
+    /* z-index: 1; */
     border-bottom: 2px solid rgb(21, 19, 32);
     display: flex;
     flex-direction: column;
@@ -307,61 +309,15 @@ transform: scale(1.1);
 }
 .products-page .container{
     height: 85%;
-    margin: 3rem auto;
+    width: 100%;
+    margin:  auto;
 }
-.products-page .translate{
-    width: 75%;
-    background-color: rgba(255, 255, 255, 0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 1rem;
-    box-shadow: 0 0 15px rgb(21, 19, 32);
-    
-}
-.previous,.next{
-    width: 10%;
-}
-.numbers{
-    width: 80%;
-}
-.numbers ul{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    /* box-sizing: border-box; */
-}
-.numbers ul li{
-    list-style: none;
-    display: block;
-    padding: 5px 2px;
-    margin: 0 5px;
-    text-align: center;
-}
-.numbers ul li:not(.dots){
-    cursor: pointer;
-}
-.numbers ul li.active, .numbers ul li:hover:not(.dots),
-.translate button:hover
-{
-    color: lightblue;
-    font-size: bolder;
-}
-.translate button{
-    background-color: transparent;
-    border: none;
-    padding: 5px 2px;
-    text-align: center;
-    cursor: pointer;
-    font-weight: 800;
-    color: white;
-}
+
 .cards{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(12rem,1fr));
     grid-gap: 1rem;
+    position: relative;
 }
 .card{
     background-color: #1c1b29;
@@ -416,7 +372,59 @@ transform: scale(1.1);
     border-radius: 3px;
 }
 .request input[type=button]:hover{
-    background-color: rgb(104, 235, 104);
+    background-color: var(--main--color);
+    color: white;
+}
+.products-page .translate{
+    width: 75%;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px rgb(21, 19, 32);
+    position: absolute;
+    bottom: -7%;
+    left: 50%;
+    transform: translate(-50%,-7%);
+}
+.previous,.next{
+    width: 10%;
+}
+.numbers{
+    width: 80%;
+}
+.numbers ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.numbers ul li{
+    list-style: none;
+    display: block;
+    padding: 5px 2px;
+    margin: 0 5px;
+    text-align: center;
+}
+.numbers ul li:not(.dots){
+    cursor: pointer;
+}
+.numbers ul li.active, .numbers ul li:hover:not(.dots),
+.translate button:hover
+{
+    color: lightblue;
+    font-size: bolder;
+}
+.translate button{
+    background-color: transparent;
+    border: none;
+    padding: 5px 2px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 800;
+    color: white;
 }
 /* End products page */
 
@@ -424,11 +432,12 @@ transform: scale(1.1);
 .services-page{
     background-image: url("../imgs/services.png");
     position: relative;
-    z-index: 2;
+    z-index: -1;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
     background-attachment: fixed;
+    mix-blend-mode: overlay;
     color: white;
     display: flex;
     justify-content: center;
@@ -484,12 +493,13 @@ transform: scale(1.1);
 /* Start contact page */
 .contact-page{
     position: relative;
-    z-index: 1;
+    z-index: -1;
     background-image: url("../imgs/contact.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+    mix-blend-mode: overlay;
     color: white;
     display: flex;
     flex-direction: column;
@@ -502,6 +512,7 @@ transform: scale(1.1);
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 1rem;
 }
 .contact-info{
     width: 20%;
@@ -562,7 +573,7 @@ input[type=submit]:hover {
 
 .contact-form {
     width: 75%;
-    height: 80%;
+    height: 90%;
     border-radius: 2px;
     background-color: rgba(0, 0, 0, 0.4);
     padding: 1rem;
@@ -645,15 +656,13 @@ footer{
 
 /* ................... */
 @media (max-width: 1200px){
-    /* .container{
-        width: 1140px;
-    } */
+    .products-page{
+        overflow-y: scroll;
+    }
     
 }
 @media (max-width: 992px){
-    /* .container{
-        width: 960px;
-    } */
+    
     .header-area .links-container{
         width: 70%;
     }
@@ -665,6 +674,10 @@ footer{
     }
     .footer{
         font-size: 70%;
+    }
+    .cards .translate{
+        bottom: -5%;
+        transform: translate(-50%, -5%);
     }
 }
 @media (max-width: 768px){
@@ -696,6 +709,11 @@ footer{
         border-radius: 1rem 0 0 1rem;
         border: 1px solid white;
         /* display: none; */
+    }
+    .cards .translate{
+        width: 100%;
+        bottom: -3%;
+        transform: translate(-50%, -3%);
     }
     .settings-box .introduction-text{
         width: 30rem;
@@ -761,8 +779,9 @@ footer{
         width: 90%;
         padding: 0 0.5rem;
     }
-    .products-page .translate{
-        width: 100%;
+    .cards .translate{
+        bottom: -2%;
+        transform: translate(-50%, -2%);
     }
     .contact-info .box{
         font-size: 0.5rem;
