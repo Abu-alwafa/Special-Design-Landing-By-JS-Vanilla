@@ -103,12 +103,13 @@ const main = () => {
         })
     })
     // Add click to landing page for closing setting box
-    clickEvent($('.container'), (e) => {
-        removeClass($('.settings-box'), 'open')
-        removeClass($('.toggle-settings > .fa-cog'), 'fa-spin');
-        removeClass($('.links'), 'show');
-        removeClass($('.menu-icon'), 'toggle');
-    })
+    // clickEvent($('.container'), (e) => {
+    //             removeClass($('.settings-box'), 'open')
+    //             removeClass($('.toggle-settings > .fa-cog'), 'fa-spin');
+    //             removeClass($('.links'), 'show');
+    //             removeClass($('.menu-icon'), 'toggle');
+    //             console.log(e.target.classList); 
+    // })
     // Add click to each color circle for changing root color and setting value in local storage
     $$('.color-list li').forEach(item => clickEvent(item, (e) => {
         $(':root').style.setProperty("--main--color", e.target.dataset.color);
@@ -186,7 +187,6 @@ const main = () => {
             }
         } else ChangeBkNor($('.landing-page'));
     }
-
 
     changeSwitchTime();
 

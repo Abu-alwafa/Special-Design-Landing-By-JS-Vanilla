@@ -3,7 +3,7 @@
 }
 
 :root{
-    --main--color : #860d0d;
+    --main--color : #c01010;
 }
 @font-face {
     font-family: dubai;
@@ -42,7 +42,7 @@ body,html{
     background-attachment: fixed;
     position: relative;
     z-index: 1;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid rgb(21, 19, 32);
     transition: all 1.5s;
 }
 .overlay{
@@ -69,10 +69,10 @@ body,html{
 .header-area .logo {
     flex: 1;
     font-style: italic;
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 1.5rem;
     text-shadow: 0 0 25px var(--main--color);
-
+    color: wheat
 }
 .links-container{
     /* width: 60%; */
@@ -109,8 +109,8 @@ body,html{
 }
 .links li a.active{
     border: 1px solid white;
-    border-radius: 5px;
-    padding: 2px 4px;
+    /* border-radius: 5px; */
+    padding: 3px 4px;
     background-color: var(--main--color);
     color: white;
 }
@@ -121,10 +121,14 @@ body,html{
     cursor: pointer;
     transition: 0.3 ease-in-out;
     display: none;
+    transition: transform 0.3s ease;
     
 }
+.menu-icon:hover{
+transform: scale(1.1);
+}
 .menu-icon:hover div{
-    background-color: lightgreen;
+    background-color: var(--main--color);
 }
 .menu-icon div{
     width: 100%;
@@ -132,7 +136,7 @@ body,html{
     margin-bottom: 5px;
     background-color: white;
     border-radius: 3px;
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease;
 }
 .toggle .line1{
     transform: rotate(-45deg) translate(-5px, 8px);
@@ -181,7 +185,7 @@ body,html{
     left: 10rem;
     top: 30%;
     z-index: 2;
-    width: 25rem;
+    width: 35rem;
     padding: 1rem;
     border-radius: 0 1rem 1rem 0;
     text-align: justify;
@@ -189,7 +193,6 @@ body,html{
     background-color: rgba(0, 0, 0, 0.3);
 }   
 .introduction-text fieldset{
-    
     border: none;
     border: 2px solid var(--main--color)
 }
@@ -225,7 +228,7 @@ body,html{
     border-bottom: 1px lightgray solid;
 }
 .colors-options .color-list li:nth-child(1){
-    background-color: #860d0d;
+    background-color: #c01010;
 }
 .colors-options .color-list li:nth-child(2){
     background-color: #ec407a;
@@ -257,6 +260,7 @@ body,html{
     background-color: var(--main--color);
     padding: 3px 7px;
     font-size: .6rem;
+    font-weight: bolder;
     text-align: center;
     cursor: pointer;
     border-radius: 3px;
@@ -291,10 +295,10 @@ body,html{
 /* Start products page */
 .products-page{
     padding: 1rem;
-    border-top: 2px solid white;
-    /* background-color: rgba(21, 19, 32); */
-    background-color: rgba(0, 0, 0,0.4);
-    border-bottom: 2px solid white;
+    border-top: 2px solid rgb(21, 19, 32);
+    background-color: rgba(21, 19, 32, 0.8);
+    /* background-color: rgba(0, 0, 0,0.8); */
+    border-bottom: 2px solid rgb(21, 19, 32);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -312,7 +316,8 @@ body,html{
     justify-content: center;
     align-items: center;
     border-radius: 1rem;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.18);
+    box-shadow: 0 0 15px rgb(21, 19, 32);
+    
 }
 .previous,.next{
     width: 10%;
@@ -341,7 +346,8 @@ body,html{
 .numbers ul li.active, .numbers ul li:hover:not(.dots),
 .translate button:hover
 {
-    color: black;
+    color: lightblue;
+    font-size: bolder;
 }
 .translate button{
     background-color: transparent;
@@ -363,13 +369,11 @@ body,html{
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
 }
 .img-container{
-    height: 70%;
     position: relative;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
 }
 .img-container > img{
-    height: 15rem;
     width: 100%;
     display: block;
     border-radius: 20px 20px 0 0;
@@ -418,7 +422,7 @@ body,html{
 
 /* Start services page */
 .services-page{
-    background-image: url("../imgs/7.png");
+    background-image: url("../imgs/services.png");
     position: relative;
     z-index: 2;
     background-size: cover;
@@ -429,11 +433,14 @@ body,html{
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
     transition: all 1s ease-in-out;
 }
+.services-page .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .services{
-    height: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -441,8 +448,7 @@ body,html{
     border-radius: 5px;
 }
 .service{
-    width: 30%;
-    height: 30%;
+    width: 25%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -452,21 +458,20 @@ body,html{
     color: whitesmoke;
     border-radius: 5px;
     transition: transform 0.3s ease;
+    font-size: .8rem;
 }
 .service:hover{
     background-color: rgba(255, 255, 255, 0.5);
-    border-right: 1px solid #000000;
-    border-bottom: 3px solid #000000;
     box-shadow: 5px 5px 10px black;
     text-shadow: 3px 3px 10px black;
-    color: var(--main--color);
+    color: black;
 }
 
 .service img{
     max-width: 10rem;
 }
 .service .service-description{
-    font-size: .8rem;
+    
     font-weight: bold;
     line-height: 1.5;
     border-radius: 5px;
@@ -495,11 +500,11 @@ body,html{
 .contact-page .container{
     padding: 1rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 .contact-info{
-    width: 25%;
+    width: 20%;
     height: 80%;
     display: flex;
     flex-direction: column;
@@ -521,7 +526,7 @@ input[type=text], select, textarea {
     width: 100%; 
     padding: 0.5rem; 
     border: none;
-    background: rgba(204, 204, 204, 0.7);
+    background: rgba(255, 255, 224, 0.85);
     border-bottom: 1px solid black;
     border-radius: 2px; 
     margin: .5rem 0; 
@@ -559,9 +564,9 @@ input[type=submit]:hover {
     width: 75%;
     height: 80%;
     border-radius: 2px;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(0, 0, 0, 0.4);
     padding: 1rem;
-    color: rgba(0, 0, 0, 0.801);
+    color: snow;
 }
 .contact-form form{
     height: 100%;
@@ -582,9 +587,10 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    color: black;
 }
 .info a{
-    color: white;
+    color: #8b1247;
     display: inline-block;
     text-decoration: none;
     margin-left: 2rem;
@@ -592,7 +598,7 @@ footer{
 
 /* End contact page */
 .hidden{
-    animation: fadeOut 0.3s ease-out;
+    animation: fadeOut 0.7s ease-out;
     visibility: hidden;
 }
 
@@ -692,28 +698,32 @@ footer{
         /* display: none; */
     }
     .settings-box .introduction-text{
-        width: 20rem;
+        width: 30rem;
     }
     .services{
-        display: block;
-        width: 100%;
-        height: 100%;
+        flex-direction: column;
+        justify-content: space-around;
     }
     .service{
         width: 80%;
-        margin: 0.7rem auto;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        flex-direction: row;
     }
     .service img:not(:nth-child(1)){
         width: 50%;
-        /* height: 50%; */
     }
     .contact-page .container{
         flex-direction: column-reverse;
         justify-content: space-evenly;
     }
+    input[type=text]:focus, select:focus, textarea:focus{
+        transform: scale(1);
+        box-shadow: 0 5px 5px black;
+    }
     .contact-form{
         height: 85%;
-        width: 100%;
+        width: 95%;
     }
     .contact-info{
         width: 100%;
@@ -732,9 +742,6 @@ footer{
     }
 }
 @media (max-width: 578px){
-    /* .landing-page{
-        width: 540px;
-    } */
     .header-area .logo{
         font-size: 0.9rem;
     }
@@ -751,7 +758,8 @@ footer{
         margin: 0;
     }
     .service{
-        width: 75%;
+        width: 90%;
+        padding: 0 0.5rem;
     }
     .products-page .translate{
         width: 100%;
