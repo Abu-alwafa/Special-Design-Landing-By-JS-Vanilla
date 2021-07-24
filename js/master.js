@@ -9,7 +9,7 @@ const resizeHeight = function() {
 }
 
 resizeHeight();
-window.onresize = resizeHeight;
+//window.onresize = resizeHeight;
 
 // jquery smooth scroll 
 $('.links li a').on('click', function (e) {
